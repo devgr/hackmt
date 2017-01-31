@@ -1,0 +1,5 @@
+# Git ignore file 
+
+# python virtual environment
+venv/
+api/__pycache__/
