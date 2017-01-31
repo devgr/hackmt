@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello HackMT!</title>
+        <script type="text/javascript" src="vue/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <h2>Type in the box and see what happens</h2>
+            <input type="text" v-model="myTextbox" />
+            <label>{{ myTextbox }}</label>
+            <br />
+            
+            <h2>This list is filled using Vue.js</h2>
+            <ul>
+                <li v-for="thing in things">{{ thing }}</li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="demo3.js"></script>
+    </body>
+</html>
