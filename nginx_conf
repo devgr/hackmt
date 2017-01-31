@@ -21,7 +21,7 @@ server {
 	listen 8080 default_server;
 	listen [::]:8080 default_server ipv6only=on;
 
-	root /home/ubuntu/workspace/demo/public;
+	root /home/ubuntu/workspace/hackmt/public;
 	index index.html index.htm;
 
 	# Make site accessible from http://localhost/
