@@ -1,7 +1,7 @@
 # Sample project using Vue.js, Flask, and MongoDB
 
 ## Setup using Cloud 9
-Create a workspace on c9.io using the HTML5 template, and this git repo https://github.com/devgr/hackmt.git
+Create a workspace on c9.io using *the HTML5 template*, and *this git repo* https://github.com/devgr/hackmt.git
 
 After cloning this repository and navigating to it, run `source setup.sh`
 
