@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 # tutorial on using pymongo https://api.mongodb.com/python/current/tutorial.html
-class db:
+class DB:
     def __init__(self):
         if not hasattr(self, 'client'):
             # if we don't already have a connection to the database, make a connection

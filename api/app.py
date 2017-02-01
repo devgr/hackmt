@@ -1,7 +1,8 @@
 import os
 import json
 from flask import Flask, Response
-import data_access
+from data_access import DB
+import bson.json_util as mongo_json
 app = Flask(__name__)
 
 # http://your_workspace_name-your_username.c9users.io/hello
@@ -27,5 +28,10 @@ def example():
 	return Response(string_data, content_type='text/json; charset=utf-8')
 
 
-# one route to get basically the same thing out of mongo
-
+# get the same thing out of mongo
+@app.route('/api/rogueone')
+def rogueone():
+	db = DB()
+	jyn = db.get_character('Jyn Erso')
+	string_data = mongo_json.dumps(jyn)
+	return Response(string_data, content_type='text/json; charset=utf-8')
