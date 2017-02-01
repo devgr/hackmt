@@ -1,6 +1,8 @@
 # Run with the source command, for example: source setup.sh
 # This way, the environment variables that get exported below are set in the shell that called this script.
 
+# set up mongo database
+
 # set up nginx web server
 sudo cp nginx_conf /etc/nginx/sites-enabled/default
 sudo cp nginx_conf /etc/nginx/sites-available/default
