@@ -3,3 +3,5 @@
 # python virtual environment
 venv/
 api/__pycache__/
+mongo/data/
+/data
