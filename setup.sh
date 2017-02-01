@@ -20,6 +20,7 @@ virtualenv -p /usr/bin/python3 venv # create a python virtual environment
 # `deactivate` to stop the virtual environment
 
 pip install Flask # install Flask into the virtual environment
+python -m pip install pymongo # to connect to mongo db from python
 
 # Environment variables that are needed for Flask!
 # Once these are set, and the virtual environment is enabled (see above), you can start Flask with: flask run
