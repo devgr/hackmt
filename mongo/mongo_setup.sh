@@ -7,6 +7,8 @@ mkdir data
 echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongo_start
 chmod a+x mongo_start
 
+chmod +x mongo_data_import.sh
+
 # Normal way to install mongo, but doesn't work well Cloud 9
 # based on https://docs.mongodb.com/v3.2/tutorial/install-mongodb-on-ubuntu/
 #sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
