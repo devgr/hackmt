@@ -2,7 +2,9 @@
 # This way, the environment variables that get exported below are set in the shell that called this script.
 
 # set up mongo database
-sudo bash mongo/mongo_setup.sh
+pushd mongo
+sudo bash mongo_setup.sh
+popd
 
 # set up nginx web server
 sudo cp nginx_conf /etc/nginx/sites-enabled/default
